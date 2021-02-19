@@ -9,7 +9,7 @@ class Scraper {
   async fetch(url) {
     this.url = url
     this.response = await fetch(url,{ headers: {
-      'User-Agent': event.request.headers.get('user-agent')
+      'User-Agent': request.headers.get('user-agent')
   }
 })
 
